@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
     constructor() {
@@ -13,9 +14,9 @@ class Header extends Component {
         return (
             <header>
                 <ul>
-                    <li>Login</li>
-                    <li>Bird Feeder</li>
-                    <li>Create Post</li>
+                <li><Link to="/">Login</Link></li>
+                <li><Link to="/feed">Bird Feeder</Link></li>
+                <li><Link to="/create_post">Create Post</Link></li>
                 </ul>
             </header>
         )
